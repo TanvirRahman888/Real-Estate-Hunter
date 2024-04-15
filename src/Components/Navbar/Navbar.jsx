@@ -1,15 +1,16 @@
 import { Link } from "react-router-dom";
 
+
 const Navbar = () => {
-    const navItems=<>
+    const navItems = <>
         <li to="/"><Link>Home</Link></li>
         <li to="/properties"><Link>Properties</Link></li>
         <li><Link>Update Profile</Link></li>
-       <li><Link>User Profile</Link></li>
+        <li><Link>User Profile</Link></li>
         <li><Link>Contact Us</Link></li>
     </>
     return (
-        <div>
+        <div> <div>
             <div className="navbar bg-base-100">
                 <div className="navbar-start">
                     <div className="dropdown">
@@ -31,6 +32,11 @@ const Navbar = () => {
                     <a className="btn font-bold text-xl">Log In</a>
                 </div>
             </div>
+        </div>
+            
+            {/* ----------------- */}
+           
+
         </div>
     );
 };
