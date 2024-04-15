@@ -3,14 +3,13 @@
         "id": 1,
         "estate_title": "Cozy Single-Family Home",
         "segment_name": "Single Family Home",
-        "description": "Charming single-family home in a quiet neighborhood, perfect for a small family.",
+        "description": "Discover the epitome of warmth and comfort in this charming Cozy Single-Family Home. Nestled in a serene neighborhood, this residence offers a perfect retreat for a small family seeking tranquility and convenience. Step inside to find inviting living spaces filled with natural light and adorned with modern finishes. <br/> The layout is thoughtfully designed to maximize functionality while maintaining a cozy atmosphere. The Single Family Home features spacious bedrooms for restful nights, a well-appointed kitchen ideal for culinary adventures, and a private backyard oasis perfect for outdoor gatherings and play. Whether you're relaxing in the comfortable living room or enjoying meals in the dining area, every corner of this home exudes a sense of homeliness and relaxation. Located at [insert address], this home is not just a place to live but a lifestyle to embrace. Enjoy the convenience of nearby amenities, schools, parks, and more, all within easy reach. Embrace the joy of homeownership and create lasting memories in this welcoming single-family abode. Don't miss the opportunity to make this cozy retreat your own.",
         "price": "$350,000",
         "status": "sale",
         "area": "1800 sq ft",
         "location": "123 Main St, Anytown, USA",
         "facilities": ["Living Room", "Kitchen", "Backyard"],
-        "image": "https://media.salecore.com/salesaspects/shared/GlobalImageLibrary/RealEstate/FullScreen/Luxury/luxury-real-estate-homes-for-sale-21-1760-1000.jpg",
-        "button": "View Property"
+        "image": "https://media.salecore.com/salesaspects/shared/GlobalImageLibrary/RealEstate/FullScreen/Luxury/luxury-real-estate-homes-for-sale-21-1760-1000.jpg"
     },
     {
         "id": 2,
@@ -22,8 +21,8 @@
         "area": "2200 sq ft",
         "location": "456 Elm Ave, Cityville, USA",
         "facilities": ["Living Room", "Master Suite", "Rooftop Terrace"],
-        "image": "https://assets-news.housing.com/news/wp-content/uploads/2018/11/09093208/Real-estate-basics-What-is-a-Freehold-property-FB-1200x700-compressed.jpg",
-        "button": "View Property"
+        "image": "https://assets-news.housing.com/news/wp-content/uploads/2018/11/09093208/Real-estate-basics-What-is-a-Freehold-property-FB-1200x700-compressed.jpg"
+        
     },
     {
         "id": 3,
@@ -35,8 +34,8 @@
         "area": "1200 sq ft",
         "location": "789 Oak Blvd, Metro City, USA",
         "facilities": ["Open Kitchen", "Balcony", "Fitness Center"],
-        "image": "https://png.pngtree.com/background/20230610/original/pngtree-luxury-home-with-a-beautiful-landscape-picture-image_3053541.jpg",
-        "button": "View Property"
+        "image": "https://png.pngtree.com/background/20230610/original/pngtree-luxury-home-with-a-beautiful-landscape-picture-image_3053541.jpg"
+        
     },
     {
         "id": 4,
@@ -48,8 +47,8 @@
         "area": "1500 sq ft",
         "location": "101 College Ave, Collegeland, USA",
         "facilities": ["Shared Common Area", "Study Rooms", "Laundry Facilities"],
-        "image": "https://www.zillowstatic.com/bedrock/app/uploads/sites/47/real-estate-comps-91b8c8-1440x813.jpg",
-        "button": "View Property"
+        "image": "https://www.zillowstatic.com/bedrock/app/uploads/sites/47/real-estate-comps-91b8c8-1440x813.jpg"
+        
     },
     {
         "id": 5,
@@ -61,8 +60,8 @@
         "area": "Varies by unit",
         "location": "55 Retirement Lane, Serenity Meadows, USA",
         "facilities": ["Dining Hall", "Community Center", "Medical Services"],
-        "image": "https://bsmedia.business-standard.com/_media/bs/img/article/2020-09/07/full/1599422999-3507.jpg",
-        "button": "View Property"
+        "image": "https://bsmedia.business-standard.com/_media/bs/img/article/2020-09/07/full/1599422999-3507.jpg"
+        
     },
     {
         "id": 6,
@@ -74,8 +73,8 @@
         "area": "2500 sq ft",
         "location": "123 Ocean Blvd, Paradise Beach, USA",
         "facilities": ["Private Pool", "Ocean Views", "Outdoor BBQ Area"],
-        "image": "https://assets.site-static.com/userFiles/2597/image/2023/05-23-2023_san-diego-real-estate-market-forecast/san-diego-real-estate-market-forecast.jpg",
-        "button": "View Property"
+        "image": "https://assets.site-static.com/userFiles/2597/image/2023/05-23-2023_san-diego-real-estate-market-forecast/san-diego-real-estate-market-forecast.jpg"
+        
     },
     {
         "id": 7,
@@ -87,8 +86,8 @@
         "area": "2800 sq ft",
         "location": "321 Maple Dr, Suburbia, USA",
         "facilities": ["Family Room", "Garden", "Garage"],
-        "image": "https://www.bankrate.com/2022/09/01101108/luxury-real-estate-157375176.jpg",
-        "button": "View Property"
+        "image": "https://www.bankrate.com/2022/09/01101108/luxury-real-estate-157375176.jpg"
+        
     },
     {
         "id": 8,
@@ -100,8 +99,8 @@
         "area": "3500 sq ft",
         "location": "789 Downtown Blvd, Metropolis, USA",
         "facilities": ["Spa Bathroom", "Private Terrace", "Concierge Service"],
-        "image": "https://images.moneycontrol.com/static-mcnews/2021/12/Housing-trends-4-718x435.jpg",
-        "button": "View Property"
+        "image": "https://images.moneycontrol.com/static-mcnews/2021/12/Housing-trends-4-718x435.jpg"
+        
     },
     {
         "id": 9,
@@ -113,8 +112,8 @@
         "area": "2000 sq ft",
         "location": "555 Heritage Ave, Old Town, USA",
         "facilities": ["Fireplace", "Original Features", "Roof Deck"],
-        "image": "https://www.investopedia.com/thmb/bfHtdFUQrl7jJ_z-utfh8w1TMNA=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/houses_and_land-5bfc3326c9e77c0051812eb3.jpg",
-        "button": "View Property"
+        "image": "https://www.investopedia.com/thmb/bfHtdFUQrl7jJ_z-utfh8w1TMNA=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/houses_and_land-5bfc3326c9e77c0051812eb3.jpg"
+        
     },
     {
         "id": 10,
@@ -126,7 +125,7 @@
         "area": "1200 sq ft",
         "location": "777 Mountain Rd, Tranquil Peaks, USA",
         "facilities": ["Fire Pit", "Scenic Views", "Hiking Trails"],
-        "image": "https://images.ctfassets.net/n2ifzifcqscw/3QRMlAcJFrYAEAbhziixZW/d4b9aa50215c5ea7a161b8a6b59f1974/hero-real-estate-facts-trends.jpeg",
-        "button": "View Property"
+        "image": "https://images.ctfassets.net/n2ifzifcqscw/3QRMlAcJFrYAEAbhziixZW/d4b9aa50215c5ea7a161b8a6b59f1974/hero-real-estate-facts-trends.jpeg"
+        
     }
 ]

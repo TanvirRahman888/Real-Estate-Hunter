@@ -1,23 +1,17 @@
-import { useEffect, useState } from "react";
-import Navbar from "../Navbar/Navbar";
 import Property from "../Property/Property";
+import { useLoaderData } from "react-router-dom";
 
 const AllProperty = () => {
 
-    const [property, setProperty] = useState([])
-    useEffect(() => {
-        fetch('data.json')
-            .then(res => res.json())
-            .then(data => setProperty(data))
-    }, [])
+    const property = useLoaderData()
 
     return (
-        <div>
-            <Navbar></Navbar>
+        <div >
+            <div className="grid grid-cols-2">
             {
                 property.map(property => <Property key={property.id} property={property}></Property>)
             }
-
+            </div>
         </div>
     );
 };
