@@ -26,7 +26,7 @@ const Properties = () => {
             </div>
             <div className="flex justify-center my-6">
             <button className="bg-blue-600 hover:bg-blue-500 text-white hover:text-black font-semibold rounded-xl p-4">
-                <Link to={'#'}>Show All Property</Link></button>
+                <Link to={"/allproperty"}>Show All Property</Link></button>
             </div>
         </div>
     );

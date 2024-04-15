@@ -1,8 +1,8 @@
-import { Outlet } from "react-router-dom";
 import Navbar from "../Navbar/Navbar";
 import Slider from "../Slider/Slider";
 import Properties from "../Properties/Properties";
 import OurProperties from "../OurProperties/OurProperties";
+import Footer from "../Footer/Footer";
 
 const Home = () => {
     return (
@@ -11,7 +11,8 @@ const Home = () => {
             <Slider></Slider>
             <OurProperties></OurProperties>
             <Properties></Properties>
-            <Outlet></Outlet>
+            <Footer></Footer>
+
             
         </div>
     );
