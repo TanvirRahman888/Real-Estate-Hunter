@@ -22,5 +22,6 @@ Welcome to Home Hunter! This web application allows you to explore a variety of 
 - **tailwindcss and daisyui**: Utilize Tailwind CSS and DaisyUI for modern styling.
 - **react-firebase**: Integrate Firebase services for user authentication and database functionalities.
 - **react-multi-carousel**: used for a updated slider.
+- **aos**: used for a All Property Animation.
 
 

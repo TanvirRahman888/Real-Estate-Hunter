@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 const Property = ({ property }) => {
     const { id, estate_title, segment_name, price, status, area, location,  image } = property;
     return (
-        <div className="border-2 m-3 rounded-lg flex flex-col gap-3 bg-blue-50 p-3 flex-grow">
+        <div className="border-2 m-3 rounded-lg flex flex-col gap-3 bg-blue-50 p-3 flex-grow" data-aos="zoom-out-up">
             <div className="flex-grow">
                 <img src={image} alt="" className="rounded-t-lg flex-grow w-full" />
             </div>
