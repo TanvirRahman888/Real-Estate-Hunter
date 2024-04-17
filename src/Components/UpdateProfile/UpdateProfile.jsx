@@ -1,7 +1,7 @@
 import { useContext } from "react";
 import { AuthContext } from "../../AuthProvider/AuthProvider";
 
-import { ToastContainer, toast } from 'react-toastify';
+import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
 const UpdateProfile = () => {
@@ -14,9 +14,9 @@ const UpdateProfile = () => {
         console.log(name,photo);
         updateUserProfile(name,photo)
         .then(() => {
-            alert("Profile updated!");
-            toast("Profile updated!"); // Is not Working
+            // alert("Profile updated!");
             setLoading(false)
+            toast.success("Profile updated!"); 
 
           })
         .catch(error=>{
@@ -40,7 +40,7 @@ const UpdateProfile = () => {
                 
                 <button className="bg-blue-200 hover:bg-blue-300 font-bold text-lg py-3 block w-full p-3 text-center rounded-sm dark:text-gray-50 dark:bg-violet-600">Update Profile</button>
             </form>
-            <ToastContainer />
+           
         </div>
     );
 };

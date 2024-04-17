@@ -8,7 +8,7 @@ const PrivateRouts = ({ children }) => {
     console.log(location.pathname);
 
     if (loading) {
-        return <div className="flex justify-center">
+        return <div className="flex justify-center min-h-svh">
             <span className="loading loading-dots loading-lg"></span>
         </div>
     }

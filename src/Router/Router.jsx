@@ -8,6 +8,7 @@ import Register from "../Components/Register/Register";
 import PrivateRouts from "./PrivateRouts";
 import UpdateProfile from "../Components/UpdateProfile/UpdateProfile";
 import Contact from "../Components/Contact/Contact";
+import UserProfile from "../Components/UserProfile/UserProfile";
 
 const router = createBrowserRouter([
     {
@@ -43,6 +44,10 @@ const router = createBrowserRouter([
         {
             path:'/contact',
             element:<Contact></Contact>
+        },
+        {
+            path:'/userprofile',
+            element:<PrivateRouts><UserProfile></UserProfile></PrivateRouts>
         },
       ]
       

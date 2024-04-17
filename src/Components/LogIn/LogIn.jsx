@@ -32,10 +32,20 @@ const LogIn = () => {
             })
     }
     const handelGoogleLogin = () => {
-        logInWithGoogle();
+        logInWithGoogle()
+            .then(result => {
+                console.log(result.user);
+                toast("Welcome to Home Hunter");
+                navigate(location?.state ? location.state : '/')
+            })
     }
     const handelGithubLogin = () => {
-        logInWithGithub();
+        logInWithGithub()
+            .then(result => {
+                console.log(result.user);
+                toast("Welcome to Home Hunter");
+                navigate(location?.state ? location.state : '/')
+            })
     }
 
 
