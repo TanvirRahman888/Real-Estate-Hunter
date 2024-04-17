@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import { AuthContext } from "../../AuthProvider/AuthProvider";
 
 
+
 const Navbar = () => {
 
     const { user, logOut } = useContext(AuthContext)
@@ -45,7 +46,7 @@ const Navbar = () => {
             <div className="navbar-end">
                 {
                     user ?
-                        <div className="flex items-center">
+                        <div className="flex items-center ">
                             <div className="dropdown dropdown-hover">
                                 <div tabIndex={0} role="button" className=" m-1">
                                     <div className="h-12 w-12 m-2 rounded-lg p-1 border-2 border-green-500"> <img src={user.photoURL} alt="" />

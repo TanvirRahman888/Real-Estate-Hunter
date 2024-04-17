@@ -1,5 +1,7 @@
 import { Link } from "react-router-dom";
 
+import 'animate.css';
+
 const Slider = () => {
 
     return (
@@ -34,7 +36,7 @@ const Slider = () => {
                     </div>
                 </div>
             </div>
-            <div className="absolute bottom-5 left-32 bg-gray-50 p-10 bg-opacity-50 rounded-2xl">
+            <div className="absolute bottom-5 left-32 bg-gray-50 p-10 bg-opacity-50 rounded-2xl animate__animated animate__pulse">
                 <h2 className="text-3xl text-gr font-black">Find Your Perfect Home </h2>
                 <button className="btn btn-success"><Link to={'/allproperty'}>Properties</Link></button>
             </div>

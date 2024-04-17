@@ -23,5 +23,6 @@ Welcome to Home Hunter! This web application allows you to explore a variety of 
 - **react-firebase**: Integrate Firebase services for user authentication and database functionalities.
 - **react-multi-carousel**: used for a updated slider.
 - **aos**: used for a All Property Animation.
+- **Animate.css**: used for a carousel slider animation.
 
 
