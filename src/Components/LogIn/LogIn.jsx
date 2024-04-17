@@ -1,4 +1,4 @@
-import { useContext, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import { AuthContext } from "../../AuthProvider/AuthProvider";
 import { ToastContainer, toast } from 'react-toastify';
@@ -7,6 +7,10 @@ import 'react-toastify/dist/ReactToastify.css';
 import { FaRegEye, FaRegEyeSlash } from "react-icons/fa";
 
 const LogIn = () => {
+
+    useEffect(()=>{
+        document.title="Home Hunter | Log In"
+    },[])
 
     const { signIn, logInWithGoogle, logInWithGithub } = useContext(AuthContext)
 

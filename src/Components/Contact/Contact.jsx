@@ -1,4 +1,10 @@
+import { useEffect } from "react";
+
 const Contact = () => {
+
+    useEffect(()=>{
+        document.title="Home Hunter | Contact"
+    },[])
     return (
         <div className="bg-blue-100 mx-auto py-16 md:py-40">
             <section className="py-6 dark:bg-gray-100 dark:text-gray-900">

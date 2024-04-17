@@ -1,9 +1,14 @@
+import { useEffect } from "react";
 import { useLoaderData, useParams } from "react-router-dom";
 
 const PropertyDetails = () => {
     const { id } = useParams();
     const properties = useLoaderData();
     console.log(id, properties);
+
+    useEffect(()=>{
+        document.title="Home Hunter | Property Details"
+    },[])
 
     const property = properties.find(property => property.id == id);
     console.log(property);

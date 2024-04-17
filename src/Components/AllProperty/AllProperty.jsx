@@ -3,12 +3,10 @@ import Property from "../Property/Property";
 import { useLoaderData } from "react-router-dom";
 
 
-
-
-
-
 const AllProperty = () => {
-    
+    useEffect(()=>{
+        document.title="Home Hunter | All Property"
+    },[])
     
 
     const property = useLoaderData()

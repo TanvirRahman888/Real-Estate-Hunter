@@ -1,4 +1,4 @@
-import { useContext, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import { AuthContext } from "../../AuthProvider/AuthProvider";
 import { ToastContainer, toast } from 'react-toastify';
@@ -14,6 +14,10 @@ const Register = () => {
 
     const location = useLocation();
     const navigate = useNavigate()
+
+    useEffect(()=>{
+        document.title="Home Hunter | Register"
+    },[])
 
     const handelRegisterForm = (e) => {
         e.preventDefault();

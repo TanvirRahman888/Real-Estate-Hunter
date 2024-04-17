@@ -1,8 +1,12 @@
-import { useContext } from "react";
+import { useContext, useEffect } from "react";
 import { AuthContext } from "../../AuthProvider/AuthProvider";
 
 const UserProfile = () => {
     const { user } = useContext(AuthContext)
+
+    useEffect(()=>{
+        document.title="Home Hunter | About Me"
+    },[])
     return (
         <div className="md:w-full mx-auto min-h-svh  bg-blue-50 flex pt-48 justify-center">
             <div className="">

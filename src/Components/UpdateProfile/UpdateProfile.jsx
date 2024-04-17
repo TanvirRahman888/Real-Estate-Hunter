@@ -1,4 +1,4 @@
-import { useContext } from "react";
+import { useContext, useEffect } from "react";
 import { AuthContext } from "../../AuthProvider/AuthProvider";
 
 import { toast } from 'react-toastify';
@@ -6,6 +6,10 @@ import 'react-toastify/dist/ReactToastify.css';
 
 const UpdateProfile = () => {
     const {updateUserProfile, setLoading}=useContext(AuthContext)
+
+    useEffect(()=>{
+        document.title="Home Hunter | Update Profile"
+    },[])
 
     const handelUpdateProfile = (e) => {     
         e.preventDefault()
@@ -23,6 +27,7 @@ const UpdateProfile = () => {
             console.error(error)
         })
 
+        
         
     }
     return (
