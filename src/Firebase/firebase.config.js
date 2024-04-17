@@ -4,13 +4,16 @@ import { initializeApp } from "firebase/app";
 // https://firebase.google.com/docs/web/setup#available-libraries
 
 // Your web app's Firebase configuration
+
+console.log(import.meta.env.VITE_PASS);
+
 const firebaseConfig = {
-  apiKey: "AIzaSyCqWaduoHeJMFo_boVn6LO78RCuFPlzLe4",
-  authDomain: "real-estate-hunter-52892.firebaseapp.com",
-  projectId: "real-estate-hunter-52892",
-  storageBucket: "real-estate-hunter-52892.appspot.com",
-  messagingSenderId: "1030865170967",
-  appId: "1:1030865170967:web:0cc7453c2ba4eeab17a252"
+  apiKey: import.meta.env.VITE_APIKEY,
+  authDomain:  import.meta.env.VITE_AUTHDOMAIN,
+  projectId:  import.meta.env.VITE_PROJECTID,
+  storageBucket:  import.meta.env.VITE_STORAGEBUCKET,
+  messagingSenderId:  import.meta.env.VITE_MESSAGINGSENDERID,
+  appId:  import.meta.env.VITE_APPID,
 };
 
 // Initialize Firebase

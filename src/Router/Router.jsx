@@ -5,6 +5,7 @@ import AllProperty from "../Components/AllProperty/AllProperty";
 import PropertyDetails from "../Components/PropertyDetails/PropertyDetails";
 import LogIn from "../Components/LogIn/LogIn";
 import Register from "../Components/Register/Register";
+import PrivateRouts from "./PrivateRouts";
 
 const router = createBrowserRouter([
     {
@@ -23,7 +24,7 @@ const router = createBrowserRouter([
         {
             path:'/property/:id',
             loader: ()=>fetch('data.json'),
-            element:<PropertyDetails></PropertyDetails>
+            element:<PrivateRouts><PropertyDetails></PropertyDetails></PrivateRouts>
         },
         {
             path:'/login',
