@@ -21,7 +21,6 @@ Welcome to Home Hunter! This web application allows you to explore a variety of 
 - **localforage**: Manage user data using asynchronous local storage.
 - **tailwindcss and daisyui**: Utilize Tailwind CSS and DaisyUI for modern styling.
 - **react-firebase**: Integrate Firebase services for user authentication and database functionalities.
+- **react-multi-carousel**: used for a updated slider.
 
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
