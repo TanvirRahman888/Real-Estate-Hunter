@@ -1,7 +1,9 @@
 import { Outlet } from "react-router-dom";
 import Navbar from "../Navbar/Navbar";
 import Footer from "../Footer/Footer";
-import Testimonial from "../Testimonial/Testimonial";
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
 
 
 const Root = () => {
@@ -9,8 +11,9 @@ const Root = () => {
         <div className="container mx-auto px-3">
             <Navbar></Navbar>
             <Outlet></Outlet>
-            <Testimonial></Testimonial>
             <Footer></Footer>        
+
+            <ToastContainer />
         </div>
     );
 };

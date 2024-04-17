@@ -1,6 +1,8 @@
 import { GithubAuthProvider, GoogleAuthProvider, createUserWithEmailAndPassword, getAuth, onAuthStateChanged, signInWithEmailAndPassword, signInWithPopup, signOut, updateProfile } from "firebase/auth";
 import { createContext, useEffect, useState } from "react";
 import app from "../Firebase/firebase.config";
+import { toast } from 'react-toastify';
+
 
 export const AuthContext = createContext(null)
 
@@ -20,20 +22,24 @@ const AuthProvider = ({ children }) => {
     }
 
     const signIn = (email, password) => {
+        
         setLoading(true)
         return signInWithEmailAndPassword(auth, email, password)
     }
 
     //Google Leg in
     const logInWithGoogle = () => {
+        toast("Log in with Google");
         return signInWithPopup(auth, googleProvider);
     }
     //GitHub Leg in
     const logInWithGithub = () => {
+        toast("Log in with Github");
         return signInWithPopup(auth, githubProvider);
     }
 
     const updateUserProfile = (name, photo) => {
+        toast("Profile updated!");
         setLoading(true)
         return updateProfile(auth.currentUser, {
             displayName: name,

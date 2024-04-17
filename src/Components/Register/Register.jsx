@@ -1,10 +1,14 @@
 import { useContext } from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import { AuthContext } from "../../AuthProvider/AuthProvider";
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const Register = () => {
 
     const {registerUser, updateUserProfile}=useContext(AuthContext)
+    const location = useLocation();
+    const navigate = useNavigate()
 
     const handelRegisterForm = (e) => {
         e.preventDefault();
@@ -21,6 +25,9 @@ const Register = () => {
             // Signed up 
             updateUserProfile(name,photoURL )
             console.log(result.user);
+            toast("Registration Successful!");
+            navigate(location?.state ? location.state : '/')
+
             // ...
           })
           .catch((error) => {
@@ -58,7 +65,7 @@ const Register = () => {
                 </p>
 
             </div>
-
+            <ToastContainer />
         </div>
     );
 };
