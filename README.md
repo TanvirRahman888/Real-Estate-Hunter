@@ -11,7 +11,7 @@ Currently, two official plugins are available:
 -[Update user profile name and Photo]
 -[Responsive for all devices]
 
--[#npm package]
+#npm-package
 -[npm create vite@latest Home-hunter -- --template react]
 -[npm install react-router-dom localforage match-sorter sort-by]
 -[npm install -D tailwindcss]
