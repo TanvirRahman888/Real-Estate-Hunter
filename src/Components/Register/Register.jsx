@@ -27,6 +27,7 @@ const Register = () => {
             console.error(error)
             // ..
           });
+        // window.location.reload()
     }
     return (
         <div>

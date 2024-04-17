@@ -12,7 +12,7 @@ const UpdateProfile = () => {
         console.log(name,photo);
         updateUserProfile(name,photo)
         .then(() => {
-            console.log("Profile updated!");
+            alert("Profile updated!");
           })
         .catch(error=>{
             console.error(error)
@@ -35,6 +35,7 @@ const UpdateProfile = () => {
                 
                 <button className="bg-blue-200 hover:bg-blue-300 font-bold text-lg py-3 block w-full p-3 text-center rounded-sm dark:text-gray-50 dark:bg-violet-600">Update Profile</button>
             </form>
+            
         </div>
     );
 };
