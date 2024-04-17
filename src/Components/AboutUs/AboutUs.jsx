@@ -5,7 +5,8 @@ const AboutUs = () => {
                 <div className="container p-4 mx-auto space-y-16 sm:p-10">
                     <div className="space-y-4 text-center flex flex-col justify-center">
                         <h3 className="text-2xl font-bold leading-none sm:text-5xl">About us</h3>
-                        <p className="text-center">At a assumenda quas cum earum ut itaque commodi saepe rem aspernatur quam natus quis nihil quod, hic explicabo doloribus magnam neque, exercitationem eius sunt!</p>
+                        <p className="text-center">Welcome to Home Hunter, where we redefine the real estate experience. As seasoned professionals in the industry, we pride ourselves on our commitment to integrity, transparency, and exceptional service. Whether you are a first-time homebuyer, an investor, or looking to sell your property, our dedicated team is here to guide you every step of the way. With a deep understanding of the local market and access to a wide network of resources, we strive to make your real estate journey smooth and successful. At [Your Company Name], we prioritize your goals and work tirelessly to exceed your expectations. Discover the difference with us and let us unlock new possibilities in real estate together. 
+                        </p>
                     </div>
                     <div className="grid w-full grid-cols-1 gap-6 md:grid-cols-2">
                         <div className="flex space-x-6">

@@ -21,8 +21,7 @@ const AuthProvider = ({ children }) => {
         return createUserWithEmailAndPassword(auth, email, password)
     }
 
-    const signIn = (email, password) => {
-        
+    const signIn = (email, password) => {        
         setLoading(true)
         return signInWithEmailAndPassword(auth, email, password)
     }
@@ -30,11 +29,13 @@ const AuthProvider = ({ children }) => {
     //Google Leg in
     const logInWithGoogle = () => {
         toast("Log in with Google");
+        setLoading(true)
         return signInWithPopup(auth, googleProvider);
     }
     //GitHub Leg in
     const logInWithGithub = () => {
         toast("Log in with Github");
+        setLoading(true)
         return signInWithPopup(auth, githubProvider);
     }
 

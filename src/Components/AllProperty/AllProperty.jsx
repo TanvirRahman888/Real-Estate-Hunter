@@ -2,17 +2,14 @@ import { useEffect } from "react";
 import Property from "../Property/Property";
 import { useLoaderData } from "react-router-dom";
 
-import AOS from 'aos';
-import 'aos/dist/aos.css';
+
 
 
 
 
 const AllProperty = () => {
     
-    useEffect(()=>{
-        AOS.init({ duration: 1000 });
-    },[])
+    
 
     const property = useLoaderData()
 

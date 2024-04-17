@@ -37,6 +37,7 @@ const Register = () => {
           })
           .catch((error) => {
             console.error(error)
+            toast("Use another Email and Password!");
             // ..
           });
         // window.location.reload()
