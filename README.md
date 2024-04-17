@@ -5,7 +5,7 @@ http://localhost:5173/
 You can find Residential: Single-family homes, townhouses, apartments, student housing, senior living communities, vacation rentals etc property here.
 Currently, two official plugins are available:
 
--[Get Residential Property Information]
+-[1] Get Residential Property Information
 -[Register With Email and Password]
 -[Log in With Email & Password, Google and Github]
 -[Update user profile name and Photo]
