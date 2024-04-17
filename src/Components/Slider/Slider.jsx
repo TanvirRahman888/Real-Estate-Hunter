@@ -38,7 +38,7 @@ const Slider = () => {
             </div>
             <div className="absolute bottom-5 left-32 bg-gray-50 p-10 bg-opacity-50 rounded-2xl animate__animated animate__pulse">
                 <h2 className="text-3xl text-gr font-black">Find Your Perfect Home </h2>
-                <button className="btn btn-success"><Link to={'/allproperty'}>Properties</Link></button>
+                <button className="btn btn-success animate__animated animate__swing mt-5"><Link to={'/allproperty'}>Properties</Link></button>
             </div>
             {/* --------------- */}
             {/* <Carousel responsive={responsive}>

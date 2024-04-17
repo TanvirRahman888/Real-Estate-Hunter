@@ -61,7 +61,7 @@ const Navbar = () => {
                             <Link to={'#'} onClick={handelLogOut}> <a className="btn btn-warning font-bold text-xl">Log Out</a> </Link>
                         </div>
                         :
-                        <Link to={'/login'}> <a className="btn font-bold text-xl">Get Access</a> </Link>
+                        <Link to={'/login'}> <a className="btn font-bold text-xl animate__animated animate__swing bg-blue-300 hover:bg-blue-400">Get Access</a> </Link>
                 }
 
 
