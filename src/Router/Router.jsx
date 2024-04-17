@@ -7,6 +7,7 @@ import LogIn from "../Components/LogIn/LogIn";
 import Register from "../Components/Register/Register";
 import PrivateRouts from "./PrivateRouts";
 import UpdateProfile from "../Components/UpdateProfile/UpdateProfile";
+import Contact from "../Components/Contact/Contact";
 
 const router = createBrowserRouter([
     {
@@ -19,12 +20,12 @@ const router = createBrowserRouter([
         },
         {
             path:'/allproperty',
-            loader: ()=>fetch('data.json'),
+            loader: ()=>fetch('/data.json'),
             element:<AllProperty></AllProperty>
         },
         {
             path:'/property/:id',
-            loader: ()=>fetch('data.json'),
+            loader: ()=>fetch('/data.json'),
             element:<PrivateRouts><PropertyDetails></PropertyDetails></PrivateRouts>
         },
         {
@@ -38,6 +39,10 @@ const router = createBrowserRouter([
         {
             path:'/register',
             element:<Register></Register>
+        },
+        {
+            path:'/contact',
+            element:<Contact></Contact>
         },
       ]
       

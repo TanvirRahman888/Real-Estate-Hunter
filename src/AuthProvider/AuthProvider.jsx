@@ -70,6 +70,7 @@ const AuthProvider = ({ children }) => {
         updateUserProfile,
         logInWithGoogle,
         logInWithGithub,
+        loading,
     }
 
     return (

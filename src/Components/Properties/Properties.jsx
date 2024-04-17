@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 const Properties = () => {
     const [property, setProperty] = useState([])
     useEffect(() => {
-        fetch('data.json')
+        fetch('/data.json')
             .then(res => res.json())
             .then(data => setProperty(data))
     }, [])

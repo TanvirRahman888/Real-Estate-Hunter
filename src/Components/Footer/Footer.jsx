@@ -3,7 +3,7 @@ const Footer = () => {
         <div>
             <footer className="footer p-10 bg-blue-300 text-black">
                 <aside>
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Home-icon.svg/1024px-Home-icon.svg.png" className="w-10" alt="" />
+                    <img src="https://i.ibb.co/mtWYSdD/Animation-1713334642828.gif" className="w-20" alt="" />
                     <p>Home Hunter Ltd.<br />Providing reliable living facility since 2012</p>
                 </aside>
                 <nav>

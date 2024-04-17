@@ -1,42 +1,19 @@
-import Carousel from "react-multi-carousel";
-import "react-multi-carousel/lib/styles.css";
+import { Link } from "react-router-dom";
 
 const Slider = () => {
 
-    // -----------------------------
-
-    const responsive = {
-        superLargeDesktop: {
-            // the naming can be any, depends on you.
-            breakpoint: { max: 4000, min: 3000 },
-            items: 5
-        },
-        desktop: {
-            breakpoint: { max: 3000, min: 1024 },
-            items: 3
-        },
-        tablet: {
-            breakpoint: { max: 1024, min: 464 },
-            items: 2
-        },
-        mobile: {
-            breakpoint: { max: 464, min: 0 },
-            items: 1
-        }
-    };
-    // ---------------
     return (
-        <div>
+        <div className="relative">
             <div className="carousel w-full">
                 <div id="slide1" className="carousel-item relative w-full">
-                    <img src="https://daisyui.com/images/stock/photo-1625726411847-8cbb60cc71e6.jpg" className="w-full" />
+                    <img src="https://latheoz.com/wp-content/uploads/2022/03/images.jpeg" className="w-full" />
                     <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
                         <a href="#slide4" className="btn btn-circle">❮</a>
                         <a href="#slide2" className="btn btn-circle">❯</a>
                     </div>
                 </div>
                 <div id="slide2" className="carousel-item relative w-full">
-                    <img src="https://daisyui.com/images/stock/photo-1609621838510-5ad474b7d25d.jpg" className="w-full" />
+                    <img src="https://i.pinimg.com/736x/fb/cb/d6/fbcbd6a91f41a68b2fe6429ab523a6fb.jpg" className="w-full" />
                     <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
                         <a href="#slide1" className="btn btn-circle">❮</a>
                         <a href="#slide3" className="btn btn-circle">❯</a>
@@ -57,8 +34,12 @@ const Slider = () => {
                     </div>
                 </div>
             </div>
+            <div className="absolute bottom-5 left-32 bg-gray-50 p-10 bg-opacity-50 rounded-2xl">
+                <h2 className="text-3xl text-gr font-black">Find Your Perfect Home </h2>
+                <button className="btn btn-success"><Link to={'/allproperty'}>Properties</Link></button>
+            </div>
             {/* --------------- */}
-            <Carousel responsive={responsive}>
+            {/* <Carousel responsive={responsive}>
                 <div>
                     <div className="card w-96 bg-base-100 shadow-xl">
                         <figure><img src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg" alt="Shoes" /></figure>
@@ -155,8 +136,10 @@ const Slider = () => {
                         </div>
                     </div>
                 </div>
-            </Carousel>
+            </Carousel> */}
         </div>
+        // ----------------------
+       
     );
 };
 

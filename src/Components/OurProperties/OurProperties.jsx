@@ -1,6 +1,6 @@
 const OurProperties = () => {
     return (
-        <div className="text-center pb-5">
+        <div className="text-center pb-5 border-2 p-5 my-7 rounded-xl">
             <h2 className="text-2xl font-bold py-5">Our Properties: Find Your Perfect Home</h2>
             <p className="text-justify">Welcome to our extensive collection of properties, curated to cater to your unique preferences and lifestyle needs. Discover a diverse range of residences meticulously selected to ensure quality, comfort, and style. Whether you are seeking a cozy apartment, a spacious family home, or a luxurious estate, we have something for everyone. <br /> <br />
             Explore our listings featuring detailed descriptions, high-resolution images, and comprehensive amenities lists, empowering you to make informed decisions. From urban lofts with skyline views to tranquil countryside retreats, we offer a spectrum of options to suit various tastes and budgets. <br /> <br />
