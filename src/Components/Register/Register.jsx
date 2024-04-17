@@ -1,12 +1,17 @@
-import { useContext } from "react";
+import { useContext, useState } from "react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import { AuthContext } from "../../AuthProvider/AuthProvider";
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
+import { FaRegEye, FaRegEyeSlash } from "react-icons/fa";
+
 const Register = () => {
 
+    const [showPassword, setShowPassword] = useState(false);
     const {registerUser, updateUserProfile}=useContext(AuthContext)
+
+
     const location = useLocation();
     const navigate = useNavigate()
 
@@ -55,7 +60,13 @@ const Register = () => {
                     </div>
                     <div className="space-y-1 text-sm">
                         <label className="block dark:text-gray-600">Password</label>
-                        <input type="password" name="password" placeholder="Password" className="w-full px-4 py-3 rounded-md dark:border-gray-300 dark:bg-gray-50 dark:text-gray-800 focus:dark:border-violet-600" />
+                        <div className=" relative"> <input type={showPassword ? "text" : "password"} name="password" placeholder="Password" className="w-full px-4 py-3 rounded-md dark:border-gray-300 dark:bg-gray-50  focus:dark:border-violet-600" />
+                            <div onClick={() => setShowPassword(!showPassword)} className="absolute right-4 top-4">
+                                {
+                                    showPassword ? <FaRegEyeSlash /> : <FaRegEye />
+                                }
+                            </div>
+                        </div>
 
                     </div>
                     <button className="bg-blue-200 hover:bg-blue-300 font-bold text-lg py-3 block w-full p-3 text-center rounded-sm dark:text-gray-50 dark:bg-violet-600">Register</button>

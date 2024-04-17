@@ -1,12 +1,17 @@
-import { useContext } from "react";
+import { useContext, useState } from "react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import { AuthContext } from "../../AuthProvider/AuthProvider";
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
+import { FaRegEye, FaRegEyeSlash } from "react-icons/fa";
+
 const LogIn = () => {
 
     const { signIn, logInWithGoogle, logInWithGithub } = useContext(AuthContext)
+
+    const [showPassword, setShowPassword] = useState(false);
+
 
     const location = useLocation();
     const navigate = useNavigate()
@@ -60,7 +65,13 @@ const LogIn = () => {
                     </div>
                     <div className="space-y-1 text-sm">
                         <label className="block dark:text-gray-600">Password</label>
-                        <input type="password" name="password" id="password" placeholder="Password" className="w-full px-4 py-3 rounded-md dark:border-gray-300 dark:bg-gray-50 dark:text-gray-800 focus:dark:border-violet-600" />
+                        <div className=" relative"> <input type={showPassword ? "text" : "password"} name="password" placeholder="Password" className="w-full px-4 py-3 rounded-md dark:border-gray-300 dark:bg-gray-50  focus:dark:border-violet-600" />
+                            <div onClick={() => setShowPassword(!showPassword)} className="absolute right-4 top-4">
+                                {
+                                    showPassword ? <FaRegEyeSlash /> : <FaRegEye />
+                                }
+                            </div>
+                        </div>
                         <div className="flex justify-end text-xs dark:text-gray-600">
                             <a rel="noopener noreferrer" href="#">Forgot Password?</a>
                         </div>
